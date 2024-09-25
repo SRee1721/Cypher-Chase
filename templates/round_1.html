@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cypher Chase Round 1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      .side-menu {
+        background-color: #003366; /* Dark blue */
+        color: white;
+        padding: 20px;
+        height: 100vh; /* Full height */
+        width: 250px; /* Fixed width */
+        position: fixed; /* Fixed sidebar */
+      }
+
+      .side-menu h1 {
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .container {
+        margin-left: 270px; /* Space for sidebar */
+        padding: 20px;
+      }
+
+      h3 {
+        color: #003366; /* Dark blue */
+        margin-top: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin: 20px 0;
+        padding: 10px;
+        background: #fff; /* White background */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        max-width: 100%; /* Ensures image does not overflow container */
+        height: auto; /* Maintains aspect ratio */
+        border-radius: 5px; /* Rounded corners for images */
+      }
+
+      form {
+        background: #ffffff; /* White background for form */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        width: 100%; /* Full width */
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc; /* Light border */
+        border-radius: 5px; /* Rounded corners */
+      }
+
+      input[type="submit"] {
+        background-color: #003366; /* Dark blue */
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #00509e; /* Lighter blue on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-menu">
+      <div class="College-name">
+        <h1>SSN IT DEPARTMENT</h1>
+      </div>
+    </div>
+    <div class="container">
+      <ul>
+        <li>
+          <img src="static/Phising Images/{{image_name}}" alt="" />
+          <span>Questions</span>
+        </li>
+      </ul>
+      <h3>LEGITIMATE OR PHISHING EMAIL</h3>
+      <form action="/1" method="post">
+        <label for="Answer">Your Answer</label>
+        <input
+          type="text"
+          id="Answer"
+          name="Answer"
+          placeholder="ENTER YOUR ANSWER"
+          required
+        />
+
+        <label for="Reason">Reason for Your Answer</label>
+        <input
+          type="text"
+          id="Reason"
+          name="reason"
+          placeholder="REASON FOR YOUR ANSWER"
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
